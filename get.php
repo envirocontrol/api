@@ -16,6 +16,7 @@ if ( $_REQUEST["json"] != null )
 	{
 		$log[] = $doc ;
 	}
+	$log[] = array( 'status' => 'OK' ) ;
 	$json = json_encode($log) ;
 	echo $json . "\n" ;
 }
